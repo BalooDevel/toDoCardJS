@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Slab:wght@600&display=swap"
+		rel="stylesheet">
+	<title>JavaScript Todo list</title>
+</head>
+
+<body>
+	<div class="todo">
+		<div class="todo-list__top">
+			<div class="todo-list__title">
+				<h3>Лист задач</h3>
+			</div>
+		</div>
+		<div class="todo-list__content">
+
+			<form class="add-item">
+				<input class="input-add" type="text" placeholder="Что сделать?" autofocus required>
+				<button class="add-btn" type="submit">Добавить</button>
+			</form>
+
+			<ul class="todo-list">
+
+				<li class="todo-item-start">
+					<span class="todo-item__text">Нет задач на сегодня!!!</span>
+				</li>
+
+				<!-- <li class="todo-item">
+					<span class="todo-item__text">Сходить за пивком</span>
+					<div class="todo-buttons">
+						<i class="far fa-check-circle item-btn" data-input="done"></i>
+						<i class="far fa-trash-alt delete item-btn" data-input="reset"></i>
+					</div>
+				</li> -->
+
+				<!-- <li class="todo-item">
+					<div class="todo-item__title">
+						<span class="todo-item__text todo-item__text--done">Сходить за водочкой и вяленной рыбкой</span>
+					</div>
+					<div class="todo-buttons">
+						<button data-input="done" class="item-btn"><i class="far fa-check-circle"></i></button>
+						<button data-input="reset" class="item-btn"><i class="far fa-trash-alt delete"></i></button>
+					</div>
+				</li> -->
+			</ul>
+		</div>
+
+	</div>
+
+	<script src="https://kit.fontawesome.com/106c7bec48.js" crossorigin="anonymous"></script>
+	<script src="./main.js"></script>
+</body>
+
+</html>

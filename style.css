@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+	font-family: "Josefin Sans", sans-serif;
+	color: #000;
+}
+
+ul,
+li {
+	font-family: inherit;
+	color: inherit;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.todo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 320px;
+	height: 500px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 7px 30px rgba(62, 9, 11, 0.3);
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.todo-list__top {
+	background-image: url("img/1562069947_1.jpg");
+	height: 190px;
+	background-size: cover;
+	background-position: 10% 20%;
+	position: relative;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.todo-list__top::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.todo-list__title h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	z-index: 10;
+	font-family: "Roboto Slab", serif;
+	font-size: 36px;
+	text-align: center;
+	font-weight: 600;
+	border-radius: 10px;
+}
+
+.todo-list__content {
+	padding: 10px 10px;
+	margin-top: 15px;
+}
+
+.add-item {
+	display: flex;
+}
+
+.input-add {
+	width: 70%;
+	padding: 10px 15px;
+	outline: none;
+	text-overflow: ellipsis;
+}
+
+.input-add::placeholder {
+	font-size: 14px;
+}
+
+.add-btn {
+	padding: 10px 15px;
+	background-color: #6b78e7;
+	border: none;
+	outline: none;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.add-btn:hover {
+	background-color: #0e3997;
+}
+
+.todo-list {
+	margin-top: 20px;
+}
+
+.todo-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	margin-bottom: 20px;
+}
+
+.todo-buttons {
+	display: flex;
+}
+
+.item-btn {
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+.item-btn + .item-btn {
+	margin-left: 15px;
+}
+
+.todo-item__text {
+	width: 80%;
+	font-size: 16px;
+	padding-right: 15px;
+}
+
+.todo-item__text--done {
+	text-decoration: line-through;
+	color: rgb(161, 154, 154);
+}
+
+.todo-item-start {
+	text-align: center;
+}
